@@ -47,7 +47,7 @@ def submitaction():
 
         url = requests.get(
             "https://dictionaryapi.com/api/v3/references/collegiate/json/" +
-            guess + "?key=5634f315-e542-4179-949b-2cadc112ee8c")
+            guess + "?key=REPLACE_WITH_YOUR_API_KEY")
         url_json = url.json()
         ourdef = url_json[0].get("shortdef")
         guess = guess.upper()
